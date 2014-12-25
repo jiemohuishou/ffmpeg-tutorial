@@ -24,18 +24,22 @@ FF_ALLOC_EVENT	tutorial04.c	42;"	d	file:
 FF_ALLOC_EVENT	tutorial05.c	43;"	d	file:
 FF_ALLOC_EVENT	tutorial06.c	46;"	d	file:
 FF_ALLOC_EVENT	tutorial07.c	40;"	d	file:
+FF_ALLOC_EVENT	tutorial10.c	15;"	d	file:
 FF_QUIT_EVENT	tutorial04.c	44;"	d	file:
 FF_QUIT_EVENT	tutorial05.c	45;"	d	file:
 FF_QUIT_EVENT	tutorial06.c	48;"	d	file:
 FF_QUIT_EVENT	tutorial07.c	42;"	d	file:
+FF_QUIT_EVENT	tutorial10.c	17;"	d	file:
 FF_REFRESH_EVENT	tutorial04.c	43;"	d	file:
 FF_REFRESH_EVENT	tutorial05.c	44;"	d	file:
 FF_REFRESH_EVENT	tutorial06.c	47;"	d	file:
 FF_REFRESH_EVENT	tutorial07.c	41;"	d	file:
+FF_REFRESH_EVENT	tutorial10.c	16;"	d	file:
 MAX_AUDIOQ_SIZE	tutorial04.c	39;"	d	file:
 MAX_AUDIOQ_SIZE	tutorial05.c	37;"	d	file:
 MAX_AUDIOQ_SIZE	tutorial06.c	37;"	d	file:
 MAX_AUDIOQ_SIZE	tutorial07.c	34;"	d	file:
+MAX_AUDIOQ_SIZE	tutorial10.c	14;"	d	file:
 MAX_AUDIO_FRAME_SIZE	tutorial03.c	33;"	d	file:
 MAX_AUDIO_FRAME_SIZE	tutorial04.c	37;"	d	file:
 MAX_AUDIO_FRAME_SIZE	tutorial05.c	35;"	d	file:
@@ -43,6 +47,7 @@ MAX_AUDIO_FRAME_SIZE	tutorial06.c	35;"	d	file:
 MAX_AUDIO_FRAME_SIZE	tutorial07.c	33;"	d	file:
 MAX_AUDIO_FRAME_SIZE	tutorial08.c	15;"	d	file:
 MAX_AUDIO_FRAME_SIZE	tutorial09.c	11;"	d	file:
+MAX_AUDIO_FRAME_SIZE	tutorial10.c	19;"	d	file:
 MAX_QUEUE_SIZE	tutorial08.c	13;"	d	file:
 MAX_VIDEOQ_SIZE	tutorial04.c	40;"	d	file:
 MAX_VIDEOQ_SIZE	tutorial05.c	38;"	d	file:
@@ -65,6 +70,8 @@ PacketQueue	tutorial07.c	/^typedef struct PacketQueue {$/;"	s	file:
 PacketQueue	tutorial07.c	/^} PacketQueue;$/;"	t	typeref:struct:PacketQueue	file:
 PacketQueue	tutorial08.c	/^typedef struct PacketQueue {  $/;"	s	file:
 PacketQueue	tutorial08.c	/^} PacketQueue;  $/;"	t	typeref:struct:PacketQueue	file:
+PacketQueue	tutorial10.c	/^typedef struct PacketQueue {$/;"	s	file:
+PacketQueue	tutorial10.c	/^} PacketQueue;$/;"	t	typeref:struct:PacketQueue	file:
 SAMPLE_CORRECTION_PERCENT_MAX	tutorial06.c	43;"	d	file:
 SAMPLE_CORRECTION_PERCENT_MAX	tutorial07.c	38;"	d	file:
 SDL_AUDIO_BUFFER_SIZE	tutorial03.c	32;"	d	file:
@@ -72,6 +79,7 @@ SDL_AUDIO_BUFFER_SIZE	tutorial04.c	36;"	d	file:
 SDL_AUDIO_BUFFER_SIZE	tutorial05.c	34;"	d	file:
 SDL_AUDIO_BUFFER_SIZE	tutorial06.c	34;"	d	file:
 SDL_AUDIO_BUFFER_SIZE	tutorial07.c	32;"	d	file:
+SDL_AUDIO_BUFFER_SIZE	tutorial10.c	13;"	d	file:
 SaveFrame	tutorial01.c	/^void SaveFrame(AVFrame *pFrame, int width, int height, int iFrame) {$/;"	f
 USE_SDL	tutorial09.c	17;"	d	file:
 VIDEO_PICTURE_QUEUE_SIZE	tutorial04.c	46;"	d	file:
@@ -97,6 +105,8 @@ VideoState	tutorial06.c	/^typedef struct VideoState {$/;"	s	file:
 VideoState	tutorial06.c	/^} VideoState;$/;"	t	typeref:struct:VideoState	file:
 VideoState	tutorial07.c	/^typedef struct VideoState {$/;"	s	file:
 VideoState	tutorial07.c	/^} VideoState;$/;"	t	typeref:struct:VideoState	file:
+VideoState	tutorial10.c	/^typedef struct VideoState {$/;"	s	file:
+VideoState	tutorial10.c	/^} VideoState;$/;"	t	typeref:struct:VideoState	file:
 alloc_picture	tutorial04.c	/^void alloc_picture(void *userdata) {$/;"	f
 alloc_picture	tutorial05.c	/^void alloc_picture(void *userdata) {$/;"	f
 alloc_picture	tutorial06.c	/^void alloc_picture(void *userdata) {$/;"	f
@@ -109,24 +119,30 @@ audioStream	tutorial04.c	/^  int             videoStream, audioStream;$/;"	m	str
 audioStream	tutorial05.c	/^  int             videoStream, audioStream;$/;"	m	struct:VideoState	file:
 audioStream	tutorial06.c	/^  int             videoStream, audioStream;$/;"	m	struct:VideoState	file:
 audioStream	tutorial07.c	/^  int             videoStream, audioStream;$/;"	m	struct:VideoState	file:
+audioStream	tutorial10.c	/^    int             videoStream, audioStream;$/;"	m	struct:VideoState	file:
 audio_buf	tutorial04.c	/^  uint8_t         audio_buf[(MAX_AUDIO_FRAME_SIZE * 3) \/ 2];$/;"	m	struct:VideoState	file:
 audio_buf	tutorial05.c	/^  uint8_t         audio_buf[(MAX_AUDIO_FRAME_SIZE * 3) \/ 2];$/;"	m	struct:VideoState	file:
 audio_buf	tutorial06.c	/^  uint8_t         audio_buf[(MAX_AUDIO_FRAME_SIZE * 3) \/ 2];$/;"	m	struct:VideoState	file:
 audio_buf	tutorial07.c	/^  uint8_t         audio_buf[(MAX_AUDIO_FRAME_SIZE * 3) \/ 2];$/;"	m	struct:VideoState	file:
+audio_buf	tutorial10.c	/^    uint8_t         *audio_buf;$/;"	m	struct:VideoState	file:
+audio_buf1	tutorial10.c	/^    uint8_t         *audio_buf1;$/;"	m	struct:VideoState	file:
 audio_buf_index	tutorial04.c	/^  unsigned int    audio_buf_index;$/;"	m	struct:VideoState	file:
 audio_buf_index	tutorial05.c	/^  unsigned int    audio_buf_index;$/;"	m	struct:VideoState	file:
 audio_buf_index	tutorial06.c	/^  unsigned int    audio_buf_index;$/;"	m	struct:VideoState	file:
 audio_buf_index	tutorial07.c	/^  unsigned int    audio_buf_index;$/;"	m	struct:VideoState	file:
+audio_buf_index	tutorial10.c	/^    unsigned int    audio_buf_index;$/;"	m	struct:VideoState	file:
 audio_buf_size	tutorial04.c	/^  unsigned int    audio_buf_size;$/;"	m	struct:VideoState	file:
 audio_buf_size	tutorial05.c	/^  unsigned int    audio_buf_size;$/;"	m	struct:VideoState	file:
 audio_buf_size	tutorial06.c	/^  unsigned int    audio_buf_size;$/;"	m	struct:VideoState	file:
 audio_buf_size	tutorial07.c	/^  unsigned int    audio_buf_size;$/;"	m	struct:VideoState	file:
+audio_buf_size	tutorial10.c	/^    unsigned int    audio_buf_size;$/;"	m	struct:VideoState	file:
 audio_callback	tutorial03.c	/^void audio_callback(void *userdata, Uint8 *stream, int len) $/;"	f
 audio_callback	tutorial04.c	/^void audio_callback(void *userdata, Uint8 *stream, int len) {$/;"	f
 audio_callback	tutorial05.c	/^void audio_callback(void *userdata, Uint8 *stream, int len) {$/;"	f
 audio_callback	tutorial06.c	/^void audio_callback(void *userdata, Uint8 *stream, int len) {$/;"	f
 audio_callback	tutorial07.c	/^void audio_callback(void *userdata, Uint8 *stream, int len) {$/;"	f
 audio_callback	tutorial08.c	/^void SDLCALL audio_callback(void *userdata, Uint8 *stream, int len)  $/;"	f
+audio_callback	tutorial10.c	/^void audio_callback(void *userdata, Uint8 *stream, int len) {$/;"	f
 audio_chunk	tutorial09.c	/^static  Uint8  *audio_chunk;   $/;"	v	file:
 audio_clock	tutorial05.c	/^  double          audio_clock;$/;"	m	struct:VideoState	file:
 audio_clock	tutorial06.c	/^  double          audio_clock;$/;"	m	struct:VideoState	file:
@@ -141,6 +157,7 @@ audio_decode_frame	tutorial05.c	/^int audio_decode_frame(VideoState *is, double 
 audio_decode_frame	tutorial06.c	/^int audio_decode_frame(VideoState *is, double *pts_ptr) {$/;"	f
 audio_decode_frame	tutorial07.c	/^int audio_decode_frame(VideoState *is, double *pts_ptr) {$/;"	f
 audio_decode_frame	tutorial08.c	/^int audio_decode_frame(struct play_info_t* play, uint8_t *audio_buf,int buf_size) {  $/;"	f
+audio_decode_frame	tutorial10.c	/^int audio_decode_frame(VideoState *is) {$/;"	f
 audio_diff_avg_coef	tutorial06.c	/^  double          audio_diff_avg_coef;$/;"	m	struct:VideoState	file:
 audio_diff_avg_coef	tutorial07.c	/^  double          audio_diff_avg_coef;$/;"	m	struct:VideoState	file:
 audio_diff_avg_count	tutorial06.c	/^  int             audio_diff_avg_count;$/;"	m	struct:VideoState	file:
@@ -153,6 +170,7 @@ audio_frame	tutorial04.c	/^  AVFrame         audio_frame;$/;"	m	struct:VideoStat
 audio_frame	tutorial05.c	/^  AVFrame         audio_frame;$/;"	m	struct:VideoState	file:
 audio_frame	tutorial06.c	/^  AVFrame         audio_frame;$/;"	m	struct:VideoState	file:
 audio_frame	tutorial07.c	/^  AVFrame         audio_frame;$/;"	m	struct:VideoState	file:
+audio_frame	tutorial10.c	/^    AVFrame         *audio_frame;$/;"	m	struct:VideoState	file:
 audio_hw_buf_size	tutorial05.c	/^  int             audio_hw_buf_size;  $/;"	m	struct:VideoState	file:
 audio_hw_buf_size	tutorial06.c	/^  int             audio_hw_buf_size;  $/;"	m	struct:VideoState	file:
 audio_hw_buf_size	tutorial07.c	/^  int             audio_hw_buf_size;  $/;"	m	struct:VideoState	file:
@@ -161,25 +179,38 @@ audio_pkt	tutorial04.c	/^  AVPacket        audio_pkt;$/;"	m	struct:VideoState	fi
 audio_pkt	tutorial05.c	/^  AVPacket        audio_pkt;$/;"	m	struct:VideoState	file:
 audio_pkt	tutorial06.c	/^  AVPacket        audio_pkt;$/;"	m	struct:VideoState	file:
 audio_pkt	tutorial07.c	/^  AVPacket        audio_pkt;$/;"	m	struct:VideoState	file:
+audio_pkt	tutorial10.c	/^    AVPacket        audio_pkt;$/;"	m	struct:VideoState	file:
 audio_pkt_data	tutorial04.c	/^  uint8_t         *audio_pkt_data;$/;"	m	struct:VideoState	file:
 audio_pkt_data	tutorial05.c	/^  uint8_t         *audio_pkt_data;$/;"	m	struct:VideoState	file:
 audio_pkt_data	tutorial06.c	/^  uint8_t         *audio_pkt_data;$/;"	m	struct:VideoState	file:
 audio_pkt_data	tutorial07.c	/^  uint8_t         *audio_pkt_data;$/;"	m	struct:VideoState	file:
+audio_pkt_data	tutorial10.c	/^    uint8_t         *audio_pkt_data;$/;"	m	struct:VideoState	file:
 audio_pkt_size	tutorial04.c	/^  int             audio_pkt_size;$/;"	m	struct:VideoState	file:
 audio_pkt_size	tutorial05.c	/^  int             audio_pkt_size;$/;"	m	struct:VideoState	file:
 audio_pkt_size	tutorial06.c	/^  int             audio_pkt_size;$/;"	m	struct:VideoState	file:
 audio_pkt_size	tutorial07.c	/^  int             audio_pkt_size;$/;"	m	struct:VideoState	file:
+audio_pkt_size	tutorial10.c	/^    int             audio_pkt_size;$/;"	m	struct:VideoState	file:
 audio_pos	tutorial09.c	/^static  Uint8  *audio_pos;   $/;"	v	file:
 audio_queue	tutorial08.c	/^PacketQueue audio_queue;  $/;"	v
+audio_src_channel_layout	tutorial10.c	/^    int64_t         audio_src_channel_layout;$/;"	m	struct:VideoState	file:
+audio_src_channels	tutorial10.c	/^    int             audio_src_channels;$/;"	m	struct:VideoState	file:
+audio_src_fmt	tutorial10.c	/^    enum AVSampleFormat  audio_src_fmt;$/;"	m	struct:VideoState	typeref:enum:VideoState::AVSampleFormat	file:
+audio_src_freq	tutorial10.c	/^    int             audio_src_freq;$/;"	m	struct:VideoState	file:
 audio_st	tutorial04.c	/^  AVStream        *audio_st;$/;"	m	struct:VideoState	file:
 audio_st	tutorial05.c	/^  AVStream        *audio_st;$/;"	m	struct:VideoState	file:
 audio_st	tutorial06.c	/^  AVStream        *audio_st;$/;"	m	struct:VideoState	file:
 audio_st	tutorial07.c	/^  AVStream        *audio_st;$/;"	m	struct:VideoState	file:
+audio_st	tutorial10.c	/^    AVStream        *audio_st;$/;"	m	struct:VideoState	file:
+audio_tgt_channel_layout	tutorial10.c	/^    int64_t         audio_tgt_channel_layout;$/;"	m	struct:VideoState	file:
+audio_tgt_channels	tutorial10.c	/^    int             audio_tgt_channels;$/;"	m	struct:VideoState	file:
+audio_tgt_fmt	tutorial10.c	/^    enum AVSampleFormat  audio_tgt_fmt;$/;"	m	struct:VideoState	typeref:enum:VideoState::AVSampleFormat	file:
+audio_tgt_freq	tutorial10.c	/^    int             audio_tgt_freq;$/;"	m	struct:VideoState	file:
 audioq	tutorial03.c	/^PacketQueue audioq;$/;"	v
 audioq	tutorial04.c	/^  PacketQueue     audioq;$/;"	m	struct:VideoState	file:
 audioq	tutorial05.c	/^  PacketQueue     audioq;$/;"	m	struct:VideoState	file:
 audioq	tutorial06.c	/^  PacketQueue     audioq;$/;"	m	struct:VideoState	file:
 audioq	tutorial07.c	/^  PacketQueue     audioq;$/;"	m	struct:VideoState	file:
+audioq	tutorial10.c	/^    PacketQueue     audioq;$/;"	m	struct:VideoState	file:
 av_sync_type	tutorial06.c	/^  int             av_sync_type;$/;"	m	struct:VideoState	file:
 av_sync_type	tutorial07.c	/^  int             av_sync_type;$/;"	m	struct:VideoState	file:
 bmp	tutorial04.c	/^  SDL_Overlay *bmp;$/;"	m	struct:VideoPicture	file:
@@ -194,6 +225,7 @@ cond	tutorial05.c	/^  SDL_cond *cond;$/;"	m	struct:PacketQueue	file:
 cond	tutorial06.c	/^  SDL_cond *cond;$/;"	m	struct:PacketQueue	file:
 cond	tutorial07.c	/^  SDL_cond *cond;$/;"	m	struct:PacketQueue	file:
 cond	tutorial08.c	/^	SDL_cond *cond;  $/;"	m	struct:PacketQueue	file:
+cond	tutorial10.c	/^    SDL_cond *cond;$/;"	m	struct:PacketQueue	file:
 decode_interrupt_cb	tutorial04.c	/^int decode_interrupt_cb(void *opaque) {$/;"	f
 decode_interrupt_cb	tutorial05.c	/^int decode_interrupt_cb(void *opaque) {$/;"	f
 decode_interrupt_cb	tutorial06.c	/^int decode_interrupt_cb(void *opaque) {$/;"	f
@@ -203,6 +235,7 @@ decode_thread	tutorial04.c	/^int decode_thread(void *arg) {$/;"	f
 decode_thread	tutorial05.c	/^int decode_thread(void *arg) {$/;"	f
 decode_thread	tutorial06.c	/^int decode_thread(void *arg) {$/;"	f
 decode_thread	tutorial07.c	/^int decode_thread(void *arg) {$/;"	f
+decode_thread	tutorial10.c	/^static int decode_thread(void *arg) {$/;"	f	file:
 duration	tutorial08.c	/^	double duration;  $/;"	m	struct:VideoPicture_t	file:
 external_clock	tutorial06.c	/^  double          external_clock; \/* external clock base *\/$/;"	m	struct:VideoState	file:
 external_clock	tutorial07.c	/^  double          external_clock; \/* external clock base *\/$/;"	m	struct:VideoState	file:
@@ -212,6 +245,7 @@ filename	tutorial04.c	/^  char            filename[1024];$/;"	m	struct:VideoStat
 filename	tutorial05.c	/^  char            filename[1024];$/;"	m	struct:VideoState	file:
 filename	tutorial06.c	/^  char            filename[1024];$/;"	m	struct:VideoState	file:
 filename	tutorial07.c	/^  char            filename[1024];$/;"	m	struct:VideoState	file:
+filename	tutorial10.c	/^    char            filename[1024];$/;"	m	struct:VideoState	file:
 fill_audio	tutorial09.c	/^ void  fill_audio(void *udata,Uint8 *stream,int len){   $/;"	f
 first_pkt	tutorial03.c	/^	AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:PacketQueue	file:
 first_pkt	tutorial04.c	/^  AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:PacketQueue	file:
@@ -219,6 +253,7 @@ first_pkt	tutorial05.c	/^  AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:Pack
 first_pkt	tutorial06.c	/^  AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:PacketQueue	file:
 first_pkt	tutorial07.c	/^  AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:PacketQueue	file:
 first_pkt	tutorial08.c	/^	AVPacketList *first_pkt, *last_pkt;  $/;"	m	struct:PacketQueue	file:
+first_pkt	tutorial10.c	/^    AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:PacketQueue	file:
 flush_pkt	tutorial07.c	/^AVPacket flush_pkt;$/;"	v
 frame_last_delay	tutorial05.c	/^  double          frame_last_delay;$/;"	m	struct:VideoState	file:
 frame_last_delay	tutorial06.c	/^  double          frame_last_delay;$/;"	m	struct:VideoState	file:
@@ -250,11 +285,13 @@ global_video_state	tutorial04.c	/^VideoState *global_video_state;$/;"	v
 global_video_state	tutorial05.c	/^VideoState *global_video_state;$/;"	v
 global_video_state	tutorial06.c	/^VideoState *global_video_state;$/;"	v
 global_video_state	tutorial07.c	/^VideoState *global_video_state;$/;"	v
+global_video_state	tutorial10.c	/^VideoState *global_video_state;$/;"	v
 height	tutorial04.c	/^  int width, height; \/* source height & width *\/$/;"	m	struct:VideoPicture	file:
 height	tutorial05.c	/^  int width, height; \/* source height & width *\/$/;"	m	struct:VideoPicture	file:
 height	tutorial06.c	/^  int width, height; \/* source height & width *\/$/;"	m	struct:VideoPicture	file:
 height	tutorial07.c	/^  int width, height; \/* source height & width *\/$/;"	m	struct:VideoPicture	file:
 height	tutorial08.c	/^	int width,height;  $/;"	m	struct:VideoPicture_t	file:
+ic	tutorial10.c	/^    AVFormatContext *ic;$/;"	m	struct:VideoState	file:
 io_context	tutorial04.c	/^  AVIOContext     *io_context;$/;"	m	struct:VideoState	file:
 io_context	tutorial05.c	/^  AVIOContext     *io_context;$/;"	m	struct:VideoState	file:
 io_context	tutorial06.c	/^  AVIOContext     *io_context;$/;"	m	struct:VideoState	file:
@@ -267,6 +304,7 @@ last_pkt	tutorial05.c	/^  AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:Packe
 last_pkt	tutorial06.c	/^  AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:PacketQueue	file:
 last_pkt	tutorial07.c	/^  AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:PacketQueue	file:
 last_pkt	tutorial08.c	/^	AVPacketList *first_pkt, *last_pkt;  $/;"	m	struct:PacketQueue	file:
+last_pkt	tutorial10.c	/^    AVPacketList *first_pkt, *last_pkt;$/;"	m	struct:PacketQueue	file:
 main	tutorial01.c	/^int main(int argc, char *argv[]) {$/;"	f
 main	tutorial02.c	/^int main(int argc, char *argv[]) {$/;"	f
 main	tutorial02.c	26;"	d	file:
@@ -282,18 +320,21 @@ main	tutorial07.c	/^int main(int argc, char *argv[]) {$/;"	f
 main	tutorial07.c	27;"	d	file:
 main	tutorial08.c	/^int main(int argc,char *argv[])  $/;"	f
 main	tutorial09.c	/^int main(int argc, char* argv[])  $/;"	f
+main	tutorial10.c	/^int main(int argc, char *argv[]) {$/;"	f
 mutex	tutorial03.c	/^	SDL_mutex *mutex;$/;"	m	struct:PacketQueue	file:
 mutex	tutorial04.c	/^  SDL_mutex *mutex;$/;"	m	struct:PacketQueue	file:
 mutex	tutorial05.c	/^  SDL_mutex *mutex;$/;"	m	struct:PacketQueue	file:
 mutex	tutorial06.c	/^  SDL_mutex *mutex;$/;"	m	struct:PacketQueue	file:
 mutex	tutorial07.c	/^  SDL_mutex *mutex;$/;"	m	struct:PacketQueue	file:
 mutex	tutorial08.c	/^	SDL_mutex *mutex;  $/;"	m	struct:PacketQueue	file:
+mutex	tutorial10.c	/^    SDL_mutex *mutex;$/;"	m	struct:PacketQueue	file:
 nb_packets	tutorial03.c	/^	int nb_packets;$/;"	m	struct:PacketQueue	file:
 nb_packets	tutorial04.c	/^  int nb_packets;$/;"	m	struct:PacketQueue	file:
 nb_packets	tutorial05.c	/^  int nb_packets;$/;"	m	struct:PacketQueue	file:
 nb_packets	tutorial06.c	/^  int nb_packets;$/;"	m	struct:PacketQueue	file:
 nb_packets	tutorial07.c	/^  int nb_packets;$/;"	m	struct:PacketQueue	file:
 nb_packets	tutorial08.c	/^	int nb_packets;  $/;"	m	struct:PacketQueue	file:
+nb_packets	tutorial10.c	/^    int nb_packets;$/;"	m	struct:PacketQueue	file:
 our_get_buffer	tutorial05.c	/^int our_get_buffer(struct AVCodecContext *c, AVFrame *pic) {$/;"	f
 our_get_buffer	tutorial06.c	/^int our_get_buffer(struct AVCodecContext *c, AVFrame *pic) {$/;"	f
 our_get_buffer	tutorial07.c	/^int our_get_buffer(struct AVCodecContext *c, AVFrame *pic) {$/;"	f
@@ -309,28 +350,33 @@ pFormatCtx	tutorial06.c	/^  AVFormatContext *pFormatCtx;$/;"	m	struct:VideoState
 pFormatCtx	tutorial07.c	/^  AVFormatContext *pFormatCtx;$/;"	m	struct:VideoState	file:
 pVideoCodecCtx	tutorial08.c	/^	AVCodecContext *pVideoCodecCtx;  $/;"	m	struct:play_info_t	file:
 packet_queue_flush	tutorial07.c	/^static void packet_queue_flush(PacketQueue *q) {$/;"	f	file:
+packet_queue_flush	tutorial10.c	/^static void packet_queue_flush(PacketQueue *q) {$/;"	f	file:
 packet_queue_get	tutorial03.c	/^static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block)$/;"	f	file:
 packet_queue_get	tutorial04.c	/^static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block)$/;"	f	file:
 packet_queue_get	tutorial05.c	/^static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block)$/;"	f	file:
 packet_queue_get	tutorial06.c	/^static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block)$/;"	f	file:
 packet_queue_get	tutorial07.c	/^static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block)$/;"	f	file:
 packet_queue_get	tutorial08.c	/^static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block) {  $/;"	f	file:
+packet_queue_get	tutorial10.c	/^static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block) {$/;"	f	file:
 packet_queue_init	tutorial03.c	/^void packet_queue_init(PacketQueue *q) {$/;"	f
 packet_queue_init	tutorial04.c	/^void packet_queue_init(PacketQueue *q) {$/;"	f
 packet_queue_init	tutorial05.c	/^void packet_queue_init(PacketQueue *q) {$/;"	f
 packet_queue_init	tutorial06.c	/^void packet_queue_init(PacketQueue *q) {$/;"	f
 packet_queue_init	tutorial07.c	/^void packet_queue_init(PacketQueue *q) {$/;"	f
 packet_queue_init	tutorial08.c	/^void packet_queue_init(PacketQueue *q) {  $/;"	f
+packet_queue_init	tutorial10.c	/^void packet_queue_init(PacketQueue *q) {$/;"	f
 packet_queue_put	tutorial03.c	/^int packet_queue_put(PacketQueue *q, AVPacket *pkt) {$/;"	f
 packet_queue_put	tutorial04.c	/^int packet_queue_put(PacketQueue *q, AVPacket *pkt) {$/;"	f
 packet_queue_put	tutorial05.c	/^int packet_queue_put(PacketQueue *q, AVPacket *pkt) {$/;"	f
 packet_queue_put	tutorial06.c	/^int packet_queue_put(PacketQueue *q, AVPacket *pkt) {$/;"	f
 packet_queue_put	tutorial07.c	/^int packet_queue_put(PacketQueue *q, AVPacket *pkt) {$/;"	f
 packet_queue_put	tutorial08.c	/^int packet_queue_put(PacketQueue *q, AVPacket *pkt) {  $/;"	f
+packet_queue_put	tutorial10.c	/^int packet_queue_put(PacketQueue *q, AVPacket *pkt) {$/;"	f
 parse_tid	tutorial04.c	/^  SDL_Thread      *parse_tid;$/;"	m	struct:VideoState	file:
 parse_tid	tutorial05.c	/^  SDL_Thread      *parse_tid;$/;"	m	struct:VideoState	file:
 parse_tid	tutorial06.c	/^  SDL_Thread      *parse_tid;$/;"	m	struct:VideoState	file:
 parse_tid	tutorial07.c	/^  SDL_Thread      *parse_tid;$/;"	m	struct:VideoState	file:
+parse_tid	tutorial10.c	/^    SDL_Thread      *parse_tid;$/;"	m	struct:VideoState	file:
 pictq	tutorial04.c	/^  VideoPicture    pictq[VIDEO_PICTURE_QUEUE_SIZE];$/;"	m	struct:VideoState	file:
 pictq	tutorial05.c	/^  VideoPicture    pictq[VIDEO_PICTURE_QUEUE_SIZE];$/;"	m	struct:VideoState	file:
 pictq	tutorial06.c	/^  VideoPicture    pictq[VIDEO_PICTURE_QUEUE_SIZE];$/;"	m	struct:VideoState	file:
@@ -379,6 +425,7 @@ quit	tutorial05.c	/^  int             quit;$/;"	m	struct:VideoState	file:
 quit	tutorial06.c	/^  int             quit;$/;"	m	struct:VideoState	file:
 quit	tutorial07.c	/^  int             quit;$/;"	m	struct:VideoState	file:
 quit	tutorial08.c	/^int quit = 0;  $/;"	v
+quit	tutorial10.c	/^    int             quit;$/;"	m	struct:VideoState	file:
 rect	tutorial08.c	/^SDL_Rect rect;  $/;"	v
 schedule_refresh	tutorial04.c	/^static void schedule_refresh(VideoState *is, int delay) {$/;"	f	file:
 schedule_refresh	tutorial05.c	/^static void schedule_refresh(VideoState *is, int delay) {$/;"	f	file:
@@ -402,11 +449,14 @@ size	tutorial05.c	/^  int size;$/;"	m	struct:PacketQueue	file:
 size	tutorial06.c	/^  int size;$/;"	m	struct:PacketQueue	file:
 size	tutorial07.c	/^  int size;$/;"	m	struct:PacketQueue	file:
 size	tutorial08.c	/^	int size;  $/;"	m	struct:PacketQueue	file:
+size	tutorial10.c	/^    int size;$/;"	m	struct:PacketQueue	file:
 stream_component_open	tutorial04.c	/^int stream_component_open(VideoState *is, int stream_index) {$/;"	f
 stream_component_open	tutorial05.c	/^int stream_component_open(VideoState *is, int stream_index) {$/;"	f
 stream_component_open	tutorial06.c	/^int stream_component_open(VideoState *is, int stream_index) {$/;"	f
 stream_component_open	tutorial07.c	/^int stream_component_open(VideoState *is, int stream_index) {$/;"	f
+stream_component_open	tutorial10.c	/^int stream_component_open(VideoState *is, int stream_index) {$/;"	f
 stream_seek	tutorial07.c	/^void stream_seek(VideoState *is, int64_t pos, int rel) {$/;"	f
+swr_ctx	tutorial10.c	/^    struct SwrContext *swr_ctx;$/;"	m	struct:VideoState	typeref:struct:VideoState::SwrContext	file:
 sws_ctx	tutorial04.c	/^  struct SwsContext *sws_ctx;$/;"	m	struct:VideoState	typeref:struct:VideoState::SwsContext	file:
 sws_ctx	tutorial05.c	/^  struct SwsContext *sws_ctx;$/;"	m	struct:VideoState	typeref:struct:VideoState::SwsContext	file:
 sws_ctx	tutorial06.c	/^  struct SwsContext *sws_ctx;$/;"	m	struct:VideoState	typeref:struct:VideoState::SwsContext	file:
@@ -422,6 +472,7 @@ videoStream	tutorial04.c	/^  int             videoStream, audioStream;$/;"	m	str
 videoStream	tutorial05.c	/^  int             videoStream, audioStream;$/;"	m	struct:VideoState	file:
 videoStream	tutorial06.c	/^  int             videoStream, audioStream;$/;"	m	struct:VideoState	file:
 videoStream	tutorial07.c	/^  int             videoStream, audioStream;$/;"	m	struct:VideoState	file:
+videoStream	tutorial10.c	/^    int             videoStream, audioStream;$/;"	m	struct:VideoState	file:
 video_clock	tutorial05.c	/^  double          video_clock; \/\/\/<pts of last decoded frame \/ predicted pts of next decoded frame$/;"	m	struct:VideoState	file:
 video_clock	tutorial06.c	/^  double          video_clock; \/\/\/<pts of last decoded frame \/ predicted pts of next decoded frame$/;"	m	struct:VideoState	file:
 video_clock	tutorial07.c	/^  double          video_clock; \/\/\/<pts of last decoded frame \/ predicted pts of next decoded frame$/;"	m	struct:VideoState	file:
