@@ -1,5 +1,6 @@
 ffmpeg-tutorial
 ===============
+<<<<<<< HEAD
 
 This repository contains files from an FFmpeg tutorial originally written by
 Stephen Dranger (dranger@gmail.com).  The files have been updated to work with
@@ -65,3 +66,5 @@ To run a tutorial, first make sure that your ffmpeg installation is on your
 $LD\_LIBRARY\_PATH and then:
 
     bin/tutorial01.out
+=======
+>>>>>>> 99c356813e746917387769c928206667372f84e2
